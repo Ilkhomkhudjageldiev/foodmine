@@ -1,0 +1,17 @@
+{
+  "name": "foodmine",
+  "version": "1.0.0",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18 <19"
+  },
+  "scripts": {
+    "dev": "cd frontend && npm start & cd backend && npm start",
+    "start": "cd backend/built && node server.js",
+    "prebuild": "cd backend && npm run build",
+    "build": "cd frontend_1 && npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
